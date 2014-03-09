@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Webcam Live Stream</title>
+<link rel="stylesheet" type="text/css" href="static/style.css"/>
+</head>
+  
+<body>
+	<canvas></canvas>
+	<video></video>
+	<div id="stillWrapper">
+		<img id="stillImage" src="static/clear.png" alt=""/>
+		<span>
+			<a id="downloadStill" download="stillImage.jpg">Download</a>
+		</span>
+	</div>
+	<section id="controls">
+		<div>
+			<strong>Controls</strong>
+			<button id="play">Play</button>
+			<button id="pause">Pause</button>
+		</div>
+		<div>
+			<strong>X/Y Axis</strong>
+			<button id="flipX">FlipX</button>
+			<button id="flipY">FlipY</button>
+		</div>
+		<div>
+			<strong>Filters</strong>
+			<button id="color">Greyscale</button>
+			<button id="sepia">Sepia</button>
+			<button id="red">Red</button>
+			<button id="green">Green</button>
+			<button id="blue">Blue</button>
+			<button id="resetColors">Reset Colors</button>
+		</div>
+		<div>
+			<strong>Still Image</strong>
+			<button id="createStill">Create Still</button>
+			<button id="clearStill">Clear Still</button>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="static/webCam.js"></script>
+</html>

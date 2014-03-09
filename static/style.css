@@ -1,0 +1,126 @@
+html,
+body {
+	margin: 0;
+	padding: 0;	
+}
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	min-height: 100%;
+	background-color: #000;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+video {
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+	visibility: hidden;
+}
+
+canvas {
+	width: 100%;
+	height: 50%;
+}
+
+#controls {
+	display: none;
+}
+
+section {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+}
+
+section > div {
+	margin-bottom: 20px;
+}
+
+section > div:last-child {
+	margin-bottom: 0;
+}
+
+strong {
+	display: block;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#stillWrapper {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#stillWrapper span {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 2;
+	padding: 7px 5px 3px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+section,
+#stillWrapper span,
+button,
+#downloadStill {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+img {
+	display: none;
+}
+
+iframe {
+	display: none;
+	height: 0;
+	width: 0;
+	z-index: -1;
+}
+
+button,
+#downloadStill {
+	height: 30px;
+	color: #FFF;
+	border: none;
+	outline: none;
+	margin-bottom: 5px;
+	background: #15CA9D;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#downloadStill:hover,
+button:hover {
+	background: #333;
+}
+
+button {
+	display: block;
+	cursor: pointer;
+	width: 90px;
+}
+
+#downloadStill {
+	display: none;
+	width: 68px;
+	text-decoration: none;
+	line-height: 2.4;
+	text-indent: 6px;
+}
